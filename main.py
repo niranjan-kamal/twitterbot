@@ -4,13 +4,14 @@ import yfinance as yf
 import pytz
 import time
 import schedule
+import os
 
 # Read Twitter keys from environment
-api_key = 'o9nvTcSWIVvNH8Necatwa3QDw'
-api_secret = 'Bhc3fIR93thz3xpP32495aV7uSzKS7jCrD4ij6ON72N86h1vnS'
-access_token = '1917090769652891648-Uhf4r4Jcqy2NSEakjawmzm3yXemP9i'
-access_token_secret = 'kERtd4EdAMG7x0TviJ5Wnj749NUUpkGHP2XJzmNeqG4Cl'
-bearer_token = 'AAAAAAAAAAAAAAAAAAAAAAu30wEAAAAAmXSVzOdGUo4NHxxcguctebe6YV0%3DD4zXC5zkIJ2tVi6ute9n63Esf8e6biNozsMtBeTWMyS6008Lat'
+api_key = os.getenv('API_KEY')
+api_secret = os.getenv('API_SECRET')
+access_token = os.getenv('ACCESS_TOKEN')
+access_token_secret = os.getenv('ACCESS_TOKEN_SECRET')
+bearer_token = os.getenv('BEARER_TOKEN')
 
 # Initialize Tweepy Client (API v2)
 client = tweepy.Client(
