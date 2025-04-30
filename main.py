@@ -1,3 +1,8 @@
+
+print("🚀 Bot started and running on Koyeb... waiting to tweet!")
+
+
+
 import tweepy
 from datetime import datetime
 import yfinance as yf
