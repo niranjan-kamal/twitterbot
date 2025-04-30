@@ -1,8 +1,3 @@
-
-print("🚀 Bot started and running on Koyeb... waiting to tweet!")
-
-
-
 import tweepy
 from datetime import datetime
 import yfinance as yf
@@ -10,7 +5,7 @@ import pytz
 import time
 import schedule
 import os
-
+print("🚀 Bot started and running on Koyeb... waiting to tweet!")
 # Read Twitter keys from environment
 api_key = os.getenv('API_KEY')
 api_secret = os.getenv('API_SECRET')
