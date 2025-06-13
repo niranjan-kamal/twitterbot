@@ -116,7 +116,7 @@ def tweet_sp500():
         print(f"[{ny_time.strftime('%H:%M')}] Market closed (outside trading hours).")
 
 # === Schedule every hour ===
-schedule.every().hour.at(":08").do(tweet_sp500)
+schedule.every().hour.at(":00").do(tweet_sp500)
 schedule.every().hour.at(":30").do(tweet_sp500)
 
 print("Bot running... Tweeting S&P 500 1/2 hour with arrows and color indicators!")
