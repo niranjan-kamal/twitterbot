@@ -5,7 +5,7 @@ import pytz
 import time
 import schedule
 import os
-
+import pandas_market_calendars as mcal
 # Read Twitter keys from environment
 api_key = os.getenv('API_KEY')
 api_secret = os.getenv('API_SECRET')
