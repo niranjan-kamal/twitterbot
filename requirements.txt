@@ -1,0 +1,5 @@
+tweepy
+schedule
+yfinance
+pytz
+pandas_market_calendars
